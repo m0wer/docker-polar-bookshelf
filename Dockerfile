@@ -1,5 +1,7 @@
 FROM debian:stable-slim
 
+ARG VERSION=1.40.1
+
 RUN apt update && apt install gconf-service \
                                 gconf2 \
                                 libnotify4 \
@@ -42,7 +44,8 @@ RUN apt update && apt install gconf-service \
                                 wget \
                                 -y && rm -rf /var/lib/apt/lists/*
 
-RUN wget https://github.com/burtonator/polar-bookshelf/releases/download/v1.32.32/polar-bookshelf-1.32.32-amd64.deb -O polar-bookshelf-amd64.deb
+RUN wget
+https://github.com/burtonator/polar-bookshelf/releases/download/v$VERSION/polar-bookshelf-$VERSION-amd64.deb -O polar-bookshelf-amd64.deb
 
 RUN dpkg -i polar-bookshelf-amd64.deb
 
