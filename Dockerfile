@@ -1,6 +1,6 @@
 FROM debian:stable-slim
 
-ARG VERSION=1.50.10
+ARG VERSION=1.60.11
 
 RUN apt update && apt install gconf-service \
                                 gconf2 \
