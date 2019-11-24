@@ -5,6 +5,7 @@ ARG VERSION=1.60.11
 RUN apt update && apt install gconf-service \
                                 gconf2 \
                                 libnotify4 \
+                                libappindicator3-1 \
                                 libasound2 \
                                 libatk1.0-0 \
                                 libc6 \
@@ -21,6 +22,7 @@ RUN apt update && apt install gconf-service \
                                 libnspr4 \
                                 libpango-1.0-0 \
                                 libpangocairo-1.0-0 \
+                                libsecret-1-0 \
                                 libstdc++6 \
                                 libx11-6 \
                                 libx11-xcb1 \
