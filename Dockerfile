@@ -53,4 +53,4 @@ RUN dpkg -i polar-bookshelf-amd64.deb
 RUN useradd -m polar
 USER polar
 
-CMD ["/usr/local/bin/polar-bookshelf"]
+CMD ["/usr/bin/polar-bookshelf"]
