@@ -1,6 +1,6 @@
 FROM debian:stable-slim
 
-ARG VERSION=2.0.42
+ARG VERSION=1.100.13
 
 RUN apt update && apt install gconf-service \
                                 gconf2 \
@@ -46,7 +46,7 @@ RUN apt update && apt install gconf-service \
                                 wget \
                                 -y && rm -rf /var/lib/apt/lists/*
 
-RUN wget https://github.com/burtonator/polar-bookshelf/releases/download/v$VERSION/polar-desktop-app-$VERSION-amd64.deb -O polar-bookshelf-amd64.deb
+RUN wget https://github.com/burtonator/polar-bookshelf/releases/download/v$VERSION/polar-bookshelf-$VERSION-amd64.deb -O polar-bookshelf-amd64.deb
 
 RUN dpkg -i polar-bookshelf-amd64.deb
 
