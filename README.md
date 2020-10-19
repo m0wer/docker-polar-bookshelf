@@ -1,4 +1,10 @@
-# Polar docker
+# [UNMAINTAINED] Polar docker
+
+* This repository and its corresponding Docker image will no longer be
+  maintained. Starting on Polar 2.0, the desktop application cannot be used
+  without an online account (see
+  [#1534](https://github.com/burtonator/polar-bookshelf/issues/1534)) so I will
+  no longer use Polar nor maintain this repo.*
 
 [Polar](https://getpolarized.io/) is a document manager for web content, books
 and notes. Supports tagging, annotation, highlighting and keeps track of your
